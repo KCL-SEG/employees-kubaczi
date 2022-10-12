@@ -28,9 +28,9 @@ class Employee:
             if addAnd:
                 explanation+=" and receives a "
             if self.EmployeeContract.comissionNo>1:
-                explanation +=f"comission for {self.EmployeeContract.comissionNo} contract(s) at {self.EmployeeContract.comissionPay}/contract"
+                explanation +=f"commission for {self.EmployeeContract.comissionNo} contract(s) at {self.EmployeeContract.comissionPay}/contract"
             else:
-                explanation +=f"bonus comission of {self.EmployeeContract.comissionPay}"
+                explanation +=f"bonus commission of {self.EmployeeContract.comissionPay}"
         explanation+=f". Their total pay is {self.get_pay()}."
         return explanation
 class EmployeeContract:
