@@ -26,9 +26,9 @@ class Employee:
             addAnd=True
         if self.EmployeeContract.comissionNo:
             if addAnd:
-                explanation+=" and receives "
+                explanation+=" and receives a "
             if self.EmployeeContract.comissionNo>1:
-                explanation +=f"a comission for {self.EmployeeContract.comissionNo} contract(s) at {self.EmployeeContract.comissionPay}/contract"
+                explanation +=f"comission for {self.EmployeeContract.comissionNo} contract(s) at {self.EmployeeContract.comissionPay}/contract"
             else:
                 explanation +=f"a bonus comission of {self.EmployeeContract.comissionPay}"
         explanation+=f". Their total pay is {self.get_pay()}."
